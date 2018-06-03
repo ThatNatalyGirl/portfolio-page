@@ -1,0 +1,74 @@
+
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	width: 100%;
+	height: 100vh;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+/* 2. Content ================================= */
+
+header{
+	background: #e8e4d9;
+	border-bottom: 8px solid #000;
+	border-top: 8px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 2.5%;
+
+	h1{
+		font-size: 4.3em;
+		align-text: center;
+	}
+}
+
+nav{
+	ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		li{
+			font-size: 1.5em;
+			padding: 20px;
+			border-radius: 40px;
+
+			&:hover{
+				background: #c8c3b8;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.wrapper{
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+
+	img{
+		width: 18.5%;
+		height: auto;
+	}
+}
+
+/*Small Tablet*/
+@media screen and (min-width: 786px){
+	header{
+		flex-direction: row;
+	}
+}
