@@ -91,11 +91,13 @@ nav ul li {
 	font-size: 1.5em;
 	padding: 20px;
 	border-radius: 40px;
+	transition: .4s;
 }
 
 nav ul li:hover {
 	background: #c8c3b8;
 	cursor: pointer;
+	transition: .4s;
 }
 
 .wrapper {
@@ -104,10 +106,25 @@ nav ul li:hover {
 	background-position: center;
 	height: 100%;
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.wrapper a {
+	width: 17%;
+	margin: 100px 4%;
+	transition: .4s;
+	height: 160px;
+	padding: 30px 3%;
+}
+
+.wrapper a:hover {
+	padding: 0px 0%;
+	transition: .4s;
 }
 
 .wrapper img {
-	width: 18.5%;
+	width: 100%;
 	height: auto;
 }
 
@@ -115,6 +132,10 @@ nav ul li:hover {
 @media screen and (min-width: 786px) {
 	header {
 		flex-direction: row;
+	}
+	.wrapper a {
+		width: 12%;
+		padding: 30px 3%;
 	}
 }
 
