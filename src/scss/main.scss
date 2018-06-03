@@ -40,6 +40,11 @@ nav{
 		flex-direction: row;
 		justify-content: space-between;
 
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+
 		li{
 			font-size: 1.5em;
 			padding: 20px;
@@ -50,7 +55,7 @@ nav{
 				background: #c8c3b8;
 				cursor: pointer;
 				transition: .4s;
-			}
+			}	
 		}
 	}
 }
